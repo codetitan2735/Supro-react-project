@@ -1,0 +1,40 @@
+#homepage-boxed {
+    .ps-page__content {
+        max-width: 1280px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+    .ps-home-collection {
+        .row {
+            margin: 0 -5px;
+
+            > * {
+                padding: 0 5px;
+            }
+        }
+    }
+
+
+    @media (min-width: 1200px) {
+        .ps-home-banner {
+            padding: 0 50px;
+        }
+
+        .ps-home-product {
+            .ps-product {
+                margin-bottom: 70px;
+            }
+
+            .ps-section__header {
+                ul {
+                    align-self: flex-end;
+                }
+            }
+        }
+
+        .ps-section--partners {
+            padding-top: 120px;
+        }
+    }
+}

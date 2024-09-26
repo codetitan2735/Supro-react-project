@@ -1,0 +1,203 @@
+{
+    "main_menu": [
+        {
+            "id": "1",
+            "text": "Home",
+            "url": "/shop",
+            "extraClass": "menu-item-has-children has-mega-menu",
+            "subClass": "sub-menu",
+            "mega": "true",
+            "megaContent": [
+                {
+                    "id": "1",
+                    "heading": "Column 1",
+                    "megaItems": [
+                        {
+                            "text": "Home Default",
+                            "url": "/"
+                        },
+                        {
+                            "text": "Home Best Selling",
+                            "url": "/home/home-best-selling"
+                        },
+                        {
+                            "text": "Home Moderm",
+                            "url": "/home/home-moderm"
+                        },
+                        {
+                            "text": "Home Fullwidth",
+                            "url": "/home/home-fullwidth"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "heading": "Column 2",
+                    "megaItems": [
+                        {
+                            "text": "Home Categories",
+                            "url": "/home/home-categories"
+                        },
+                        {
+                            "text": "Home Simple",
+                            "url": "/home/home-simple"
+                        },
+                        {
+                            "text": "Home Classic",
+                            "url": "/home/home-classic"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "text": "Shop",
+            "url": "/shop",
+            "extraClass": "menu-item-has-children has-mega-menu",
+            "subClass": "sub-menu",
+            "mega": "true",
+            "megaContent": [
+                {
+                    "id": "1",
+                    "heading": "Shop Pages",
+                    "megaItems": [
+                        {
+                            "text": "Shop Default",
+                            "url": "/shop"
+                        },
+                        {
+                            "text": "Shop Sidebar",
+                            "url": "/shop/shop-sidebar"
+                        },
+                        {
+                            "text": "Shop Categories",
+                            "url": "/shop/shop-categories"
+                        },
+                        {
+                            "text": "Shop Fullwidth",
+                            "url": "/shop/shop-fullwidth"
+                        },
+                        {
+                            "text": "Shop Banner",
+                            "url": "/shop/shop-banner"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "heading": "Product Layouts",
+                    "megaItems": [
+                        {
+                            "text": "Default",
+                            "url": "/product/2"
+                        },
+                        {
+                            "text": "With Background",
+                            "url": "/product/with-background/2"
+                        },
+                        {
+                            "text": "Gallery Thumbnail",
+                            "url": "/product/gallery-thumbnail/2"
+                        },
+                        {
+                            "text": "With Sidebar",
+                            "url": "/product/with-sidebar/2"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "heading": "Product Pages",
+                    "megaItems": [
+                        {
+                            "text": "Simple",
+                            "url": "/"
+                        },
+                        {
+                            "text": "On Sale",
+                            "url": "/"
+                        }
+                    ]
+                },
+                {
+                    "id": "4",
+                    "heading": "Ecommerce Pages",
+                    "megaItems": [
+                        {
+                            "id": "1",
+                            "text": "Shopping Cart",
+                            "url": "/shop/shopping-cart"
+                        },
+                        {
+                            "id": "2",
+                            "text": "Checkout",
+                            "url": "/shop/checkout"
+                        },
+                        {
+                            "id": "3",
+                            "text": "Wishlist",
+                            "url": "/shop/wishlist"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "text": "Blogs",
+            "url": "/blog",
+            "current": "shop",
+            "extraClass": "menu-item-has-children dropdown",
+            "subClass": "sub-menu",
+            "subMenu": [
+                {
+                    "text": "Grid",
+                    "url": "/blog"
+                },
+                {
+                    "text": "Listing",
+                    "url": "/blog/blog-list"
+                },
+                {
+                    "text": "With Sidebar",
+                    "url": "/blog/blog-sidebar"
+                },
+                {
+                    "text": "Post Detail",
+                    "url": "/post/these-glittery-sneakers-will-make-you-want-to-ditch-your-holiday-heels"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "text": "Pages",
+            "url": "/pages/about-us",
+            "current": "shop",
+            "extraClass": "menu-item-has-children dropdown",
+            "subClass": "sub-menu",
+            "subMenu": [
+                {
+                    "text": "About Us",
+                    "url": "/pages/about-us"
+                },
+                {
+                    "text": "FAQs",
+                    "url": "/pages/faqs"
+                },
+                {
+                    "text": "My Account",
+                    "url": "/auth/login"
+                },
+                {
+                    "text": "Order Tracking",
+                    "url": "/pages/order-tracking"
+                }
+            ]
+        },
+        {
+            "text": "Contact",
+            "url": "/pages/contact-us"
+        }
+    ]
+}

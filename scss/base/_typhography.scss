@@ -1,0 +1,361 @@
+@font-face {
+    font-family: "Cerebri Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/static/fonts/Cerebri-Sans/CerebriSans-Light.eot") format("eot"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Light.woff") format("woff"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Light.ttf") format("truetype"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Light.svg") format("svg"),
+}
+
+@font-face {
+    font-family: "Cerebri Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/Cerebri-Sans/CerebriSans-Regular.eot") format("eot"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Regular.woff") format("woff"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Regular.ttf") format("truetype"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Regular.svg") format("svg"),
+}
+
+@font-face {
+    font-family: "Cerebri Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("/static/fonts/Cerebri-Sans/CerebriSans-Italic.eot") format("eot"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Italic.woff") format("woff"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Italic.ttf") format("truetype"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Italic.svg") format("svg"),
+}
+
+@font-face {
+    font-family: "Cerebri Sans";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/static/fonts/Cerebri-Sans/CerebriSans-Medium.eot") format("eot"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Medium.woff") format("woff"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Medium.ttf") format("truetype"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Medium.svg") format("svg"),
+}
+
+@font-face {
+    font-family: "Cerebri Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/static/fonts/Cerebri-Sans/CerebriSans-SemiBold.eot") format("eot"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-SemiBold.woff") format("woff"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-SemiBold.ttf") format("truetype"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-SemiBold.svg") format("svg"),
+}
+
+@font-face {
+    font-family: "Cerebri Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/static/fonts/Cerebri-Sans/CerebriSans-Bold.eot") format("eot"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Bold.woff") format("woff"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Bold.ttf") format("truetype"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Bold.svg") format("svg"),
+}
+
+@font-face {
+    font-family: "Cerebri Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: url("/static/fonts/Cerebri-Sans/CerebriSans-Heavy.eot") format("eot"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Heavy.woff") format("woff"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Heavy.ttf") format("truetype"),
+    url("/static/fonts/Cerebri-Sans/CerebriSans-Heavy.svg") format("svg"),
+}
+
+* {
+    font-family: $font-1st;
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: $document-font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    position: relative;
+    color: $color-heading;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6em;
+    color: $color-text;
+
+    span {
+        font-family: inherit;
+        color: inherit;
+        font-size: inherit;
+    }
+}
+
+a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-1st;
+    }
+}
+
+a, button {
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+a,
+input,
+textarea,
+button,
+select {
+    outline: none;
+    font-size: $document-font-size;
+}
+
+a:hover,
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus {
+    text-decoration: none;
+}
+
+a:focus,
+button:focus,
+select:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+iframe {
+    border: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+.ps-document {
+    ul, ol {
+        margin-bottom: 10px;
+        padding-left: 20px;
+
+        ul, ol {
+            margin-bottom: 0;
+        }
+    }
+
+    ul li, ol li {
+        color: $color-text;
+        font-size: $document-font-size;
+        line-height: 1.6em;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    p {
+        margin-bottom: 30px;
+        line-height: 1.6em;
+        color: #777;
+        font-size: rem(16);
+
+        .cap {
+            font-size: 60px;
+            font-weight: 700;
+            float: left;
+            line-height: 1;
+            color: #222;
+            margin-right: 11px;
+        }
+
+        strong {
+            font-weight: 700;
+            color: $color-heading;
+
+            i {
+                font-weight: inherit;
+            }
+
+            &.highlight {
+                font-size: 16px;
+                color: $color-heading;
+            }
+        }
+    }
+
+    blockquote {
+        margin-bottom: 20px;
+        position: relative;
+
+        &:before {
+            content: '\e7e5';
+            font-family: 'Linearicons';
+            position: absolute;
+            top: -20px;
+            left: -15px;
+            color: #eaeaea;
+            font-size: 50px;
+            line-height: 50px;
+            z-index: -1;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 24px;
+            font-style: italic;
+            line-height: 1.4em;
+            font-weight: 600;
+            color: $color-heading;
+        }
+    }
+
+    @media (min-width: 992px) {
+        p {
+            font-size: 1em;
+        }
+
+        blockquote {
+            margin-bottom: 30px;
+
+            p {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.ps-instock {
+    color: #f6663f;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.ps-tag {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 4px 20px;
+    border-radius: 50px;
+    font-size: 12px;
+    color: $color-heading;
+    background-color: #e8eff0;
+
+    &:hover {
+        background-color: $color-1st;
+        color: #fff;
+    }
+}
+
+.ps-highlight {
+    color: $color-link;
+    font-weight: 600;
+}
+
+.ps-link--under {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .05em;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #222;
+    }
+
+    &:hover {
+        &:before {
+            background-color: $color-1st;
+        }
+    }
+}
+
+.ps-link--line {
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+    line-height: 20px;
+    color: $color-text;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        transition: all .4s $timing-1;
+        @include transform(scale3d(0, 1, 1));
+        transform-origin: 0% 50%;
+    }
+
+    &:hover, &.active {
+        color: $color-heading;
+
+        &:before {
+            transform-origin: 100% 50%;
+            @include transform(scale3d(1, 1, 1));
+        }
+    }
+}

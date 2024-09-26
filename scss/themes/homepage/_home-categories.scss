@@ -1,0 +1,24 @@
+#homepage-categories {
+    .ps-home-categories {
+        padding-bottom: 0;
+    }
+
+    .ps-home-product {
+        position: relative;
+
+        .ps-product {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 1200px) {
+
+            .ps-section__header {
+                padding-bottom: 70px;
+                ul {
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+
+}

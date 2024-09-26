@@ -1,0 +1,11 @@
+.ps-blog {
+    .ps-post-items {
+        min-height: 500px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        .ps-post-items {
+            min-height: 600px;
+        }
+    }
+}

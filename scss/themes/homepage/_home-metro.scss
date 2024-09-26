@@ -1,0 +1,107 @@
+#homepage-metro {
+    .ps-home-product {
+        padding: 100px 15px 0;
+
+        .ps-block--collection {
+            margin-bottom: 30px;
+            text-align: left;
+            min-height: 460px;
+
+            &.small {
+                min-height: 220px;
+            }
+        }
+
+        .ps-section__header {
+            text-align: center;
+            max-width: 920px;
+            margin: 0 auto;
+            padding-bottom: 60px;
+
+            h5 {
+                color: #91c1b8;
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+
+            h3 {
+                margin-bottom: 48px;
+                font-size: 36px;
+                color: $color-1st;
+                line-height: 1.1em;
+                max-width: 100%;
+            }
+
+            p {
+                font-size: 16px;
+                color: $color-heading;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .ps-home-subscribe--center {
+        h3 {
+            font-size: 24px;
+        }
+
+        .ps-section__header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        form {
+            max-width: 628px;
+            margin: 0 auto;
+
+            input {
+                background-color: #f2f2f2;
+                border: none;
+                border-radius: 50px;
+                text-indent: 20px;
+            }
+
+            i {
+                left: 30px;
+            }
+
+            button {
+                right: 30px;
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            h3 {
+                font-size: 36px;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .ps-home-product {
+            padding: 185px 30px 0;
+
+            .ps-block--collection {
+                text-align: left;
+                min-height: 910px;
+
+                &.small {
+                    min-height: 440px
+                }
+            }
+
+            .ps-section__header {
+                padding-bottom: 115px;
+
+                h3 {
+                    font-size: 72px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

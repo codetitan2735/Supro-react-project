@@ -1,0 +1,193 @@
+#homepage-right-to-left {
+
+    .ps-home-banner {
+
+        @media (min-width: 1200px) {
+
+            .ps-section__nav {
+                right: auto;
+                left: 30px;
+                text-align: left;
+
+                li {
+                    &:after {
+                        right: auto;
+                        left: 0;
+                    }
+                }
+            }
+
+            .ps-banner--3 {
+                .ps-list--social {
+                    left: auto;
+                    right: 30px;
+                }
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .ps-section__nav {
+                left: 80px;
+            }
+
+            .ps-banner--3 {
+                .ps-list--social {
+                    right: 80px;
+                }
+            }
+        }
+    }
+
+    .ps-home-top-sellers {
+        padding-top: 80px;
+
+        .ps-section__header {
+            text-align: right;
+        }
+
+        .ps-product--outside {
+            text-align: right;
+
+            .ps-product__title {
+                margin-right: 0;
+                margin-left: auto;
+            }
+
+            &.small {
+
+                .ps-product__content {
+                    left: auto;
+                    right: 20px;
+                }
+            }
+
+            &.large {
+
+
+                .ps-product__content {
+                    left: auto;
+                    right: 20px;
+                }
+
+                @media (min-width: 568px) {
+                    padding-left: 0;
+                    padding-right: 130px;
+                    .ps-product__title {
+                        margin-right: 0;
+                        margin-left: auto;
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
+
+        @media (min-width: 1200px) {
+            padding-top: 160px;
+        }
+    }
+
+    .ps-deal-of-day {
+        .ps-section__content {
+            text-align: right;
+        }
+    }
+
+    .ps-home-product {
+
+
+        @media (min-width: 992px) {
+            .ps-section__header {
+                flex-direction: row-reverse;
+
+                figure {
+                    max-width: 320px;
+                    text-align: right;
+                }
+
+                ul {
+                    text-align: left;
+                }
+            }
+
+            .ps-product {
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: right;
+            }
+
+            .row {
+                .col-xl-4 {
+
+                    &:nth-child(3n) {
+                        .ps-product {
+                            margin-left: auto;
+                            margin-right: 0;
+                        }
+                    }
+
+                    &:first-child, &:nth-child(4n) {
+                        .ps-product {
+                            margin-left: 0;
+                            margin-right: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ps-home-blog {
+        text-align: right;
+
+        .ps-post {
+            .ps-post__meta {
+                a {
+                    margin-left: 10px;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .ps-section__header {
+            @media (min-width: 768px) {
+                flex-flow: row-reverse nowrap;
+            }
+        }
+
+    }
+
+    .ps-home-subscribe {
+        text-align: right;
+
+        .ps-form--keep-connected {
+            i {
+                left: auto;
+                right: 0;
+            }
+
+            button {
+                right: auto;
+                left: 0;
+            }
+
+            input {
+                text-align: right;
+                padding-right: 40px;
+            }
+
+
+        }
+
+        @include media("<sm") {
+            .row {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    .ps-footer--2 {
+        text-align: right;
+
+    }
+}

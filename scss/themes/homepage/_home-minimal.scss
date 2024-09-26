@@ -1,0 +1,33 @@
+#homepage-minimal {
+    .ps-banner {
+        @media (min-width: 1200px) {
+            min-height: 700px;
+            justify-content: center;
+
+            .ps-banner__content {
+                max-width: 1170px;
+            }
+
+            &.top {
+                .ps-banner__content {
+                    h3 {
+                        font-size: 59px;
+                    }
+                }
+            }
+        }
+    }
+
+    .ps-home-banner {
+    }
+
+    .ps-home-product--left {
+        @media (min-width: 992px) {
+            .ps-section__left {
+                position: relative;
+                top: -150px;
+                margin-bottom: -150px;
+            }
+        }
+    }
+}
